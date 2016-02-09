@@ -7,8 +7,8 @@ HIV-1 Dementia
 [Griffin, 2015 - HAND Database](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4625622/) <br>
 
 ### Database(s):
-[HAND](http://www.handdatabase.org)
-[NNTC](https://www.nntc.org/query/tool)
+[HAND](http://www.handdatabase.org) <br>
+[NNTC](https://www.nntc.org/query/tool) <br>
 
 ### Potential Questions:
 ???
