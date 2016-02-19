@@ -1,0 +1,8 @@
+{
+  "src": {
+    "WHO_tb+hiv" : "http://apps.who.int/gho/data/view.main.TBHIVCountry?lang=en",
+    "WHO_water+sani+hyg" : "http://apps.who.int/gho/data/node.main.46?lang=en",
+    "WHO_life" : "http://apps.who.int/gho/data/node.main.688?lang=en",
+    "WHO_alcohol" : "http://apps.who.int/gho/data/node.main.A1026?lang=en",
+  }
+}
