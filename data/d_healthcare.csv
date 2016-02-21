@@ -1,0 +1,284 @@
+Country,Year,Hospital_density,Healthposts_density,Heathcentres_density
+Afghanistan,2013,0.37,2.95,1.22
+Afghanistan,2010,,2.87,1.19
+Albania,2013,1.36,13.08,
+Albania,2010,,12.95,
+Angola,2010,,,
+Antigua and Barbuda,2013,1.11,,
+Antigua and Barbuda,2010,,,
+Armenia,2013,4.03,8.00,0.54
+Armenia,2010,,7.70,0.52
+Azerbaijan,2013,7.97,,7.44
+Azerbaijan,2010,,,7.62
+Bahamas,2013,1.06,39.75,0.00
+Bahamas,2010,,43.75,0.00
+Bangladesh,2013,0.17,6.21,0.02
+Bangladesh,2010,,6.54,0.02
+Barbados,2013,1.05,3.86,0.00
+Barbados,2010,,4.02,0.00
+Belarus,2013,7.45,15.36,2.86
+Belarus,2010,,14.98,2.79
+Belize,2013,2.11,12.05,12.05
+Belize,2010,,12.84,12.84
+Benin,2013,0.41,,5.45
+Benin,2010,,,6.36
+Bhutan,2013,1.72,25.47,1.59
+Bhutan,2010,,26.45,1.65
+Bolivia (Plurinational State of),2013,1.07,13.79,8.78
+Bolivia (Plurinational State of),2010,,14.82,9.44
+Bosnia and Herzegovina,2013,1.02,42.04,0.00
+Bosnia and Herzegovina,2010,,42.82,0.00
+Botswana,2013,1.29,,
+Botswana,2010,,,
+Brunei Darussalam,2013,1.44,3.35,0.48
+Brunei Darussalam,2010,,3.51,0.50
+Burkina Faso,2013,0.31,,11.89
+Burkina Faso,2010,,,10.35
+Burundi,2013,0.50,0.00,5.01
+Burundi,2010,,0.00,6.07
+CÃ´te d'Ivoire,2013,1.71,,11.83
+CÃ´te d'Ivoire,2010,,,12.18
+Cabo Verde,2013,1.00,33.47,3.81
+Cabo Verde,2010,,33.67,3.83
+Cambodia,2013,0.57,0.75,6.55
+Cambodia,2010,,0.80,7.02
+Cameroon,2013,0.79,7.43,0.63
+Cameroon,2010,,8.43,0.72
+Canada,2013,2.27,,
+Canada,2010,,,
+Central African Republic,2013,0.48,12.17,1.99
+Central African Republic,2010,,12.77,2.09
+Chad,2013,0.65,5.88,0.00
+Chad,2010,,6.72,0.00
+Chile,2013,1.04,10.69,0.12
+Chile,2010,,11.00,0.12
+China,2010,,,
+Comoros,2013,0.68,7.08,1.63
+Comoros,2010,,7.08,1.63
+Costa Rica,2013,0.84,2.11,0.70
+Costa Rica,2010,,2.21,0.69
+Croatia,2013,1.54,0.84,0.30
+Croatia,2010,,0.82,0.30
+Cuba,2013,2.04,7.53,0.64
+Cuba,2010,,7.53,0.64
+Cyprus,2013,7.54,,3.33
+Cyprus,2010,,,3.44
+Czech Republic,2013,1.29,224.84,0.16
+Czech Republic,2010,,229.33,0.16
+Democratic People's Republic of Korea,2013,6.86,25.16,3.91
+Democratic People's Republic of Korea,2010,,25.72,4
+Democratic Republic of the Congo,2013,0.45,,
+Democratic Republic of the Congo,2010,,,
+Denmark,2013,1.01,69.07,4.47
+Denmark,2010,,69.93,4.52
+Dominica,2013,5.56,84.72,0.00
+Dominica,2010,,90.03,0.00
+Ecuador,2013,0.33,2.91,0.36
+Ecuador,2010,,3.17,0.39
+Egypt,2013,0.62,0.38,0.25
+Egypt,2010,,0.39,0.26
+El Salvador,2013,0.47,9.84,0.05
+El Salvador,2010,,9.46,0.05
+Eritrea,2013,0.36,2.92,0.88
+Eritrea,2010,,3.52,1.07
+Estonia,2013,1.94,37.68,
+Estonia,2010,,36.16,
+Ethiopia,2013,0.22,15.14,0.00
+Ethiopia,2010,,17.18,0.00
+Fiji,2013,0.00,,
+Fiji,2010,,,
+Finland,2013,1.38,40.54,3.58
+Finland,2010,,41.01,3.62
+Gabon,2013,3.53,29.43,2.21
+Gabon,2010,,32.68,2.46
+Gambia,2013,0.70,26.60,1.68
+Gambia,2010,,28.47,1.79
+Georgia,2013,2.21,13.80,
+Georgia,2010,,13.76,
+Ghana,2013,1.36,1.11,9.13
+Ghana,2010,,1.18,9.69
+Grenada,2013,0.94,34.00,4.72
+Grenada,2010,,34.45,4.79
+Guatemala,2013,0.34,3.54,0.50
+Guatemala,2010,,3.81,0.54
+Guinea,2013,0.37,6.24,3.52
+Guinea,2010,,7.34,4.15
+Guinea-Bissau,2013,56.45,5.63,32.98
+Guinea-Bissau,2010,,6.34,37.09
+Guyana,2013,3.38,25.64,14.76
+Guyana,2010,,27.17,15.64
+Haiti,2013,0.24,,0.29
+Haiti,2010,,,0.30
+Honduras,2013,0.36,17.59,0.73
+Honduras,2010,,18.74,0.78
+Hungary,2013,1.02,5.80,0.11
+Hungary,2010,,5.78,0.11
+Iceland,2013,3.64,17.30,1.82
+Iceland,2010,,17.80,1.87
+Indonesia,2013,0.43,9.27,3.42
+Indonesia,2010,,9.66,3.56
+Iraq,2013,0.95,6.90,
+Iraq,2010,,7.36,
+Israel,2013,0.56,,0.01
+Israel,2010,,,0.01
+Italy,2013,2.08,,
+Italy,2010,,,
+Jamaica,2013,0.75,,
+Jamaica,2010,,,
+Jordan,2013,1.94,19.25,
+Jordan,2010,,22.63,
+Kazakhstan,2013,3.52,22.41,
+Kazakhstan,2010,,22.99,
+Kenya,2013,1.47,7.55,5.99
+Kenya,2010,,8.27,6.55
+Kiribati,2013,0.00,83.05,140.69
+Kiribati,2010,,85.39,144.66
+Kyrgyzstan,2013,2.63,17.09,
+Kyrgyzstan,2010,,17.77,
+Lao People's Democratic Republic,2013,2.25,,12.95
+Lao People's Democratic Republic,2010,,,10.77
+Latvia,2013,1.56,,1.51
+Latvia,2010,,,1.38
+Lebanon,2013,3.09,2.45,0.06
+Lebanon,2010,,2.79,0.07
+Liberia,2013,0.37,9.32,1.05
+Liberia,2010,,10.01,1.13
+Libya,2013,2.64,29.25,1.68
+Libya,2010,,28.54,1.64
+Lithuania,2013,2.15,21.01,33.15
+Lithuania,2010,,26.36,5.24
+Luxembourg,2013,1.13,,
+Luxembourg,2010,,,
+Madagascar,2013,0.47,12.96,0.27
+Madagascar,2010,,14.35,0.30
+Malawi,2013,0.40,0.45,2.30
+Malawi,2010,,0.49,2.53
+Malaysia,2013,0.47,,
+Malaysia,2010,,,
+Maldives,2013,6.67,11.01,35.94
+Maldives,2010,,12.03,39.25
+Mali,2013,0.46,,5.71
+Mali,2010,,,5.68
+Malta,2013,0.93,2.10,1.86
+Malta,2010,,2.16,1.92
+Marshall Islands,2013,3.80,1.90,98.80
+Marshall Islands,2010,,1.85,96.23
+Mauritania,2013,1.03,11.65,3.80
+Mauritania,2010,,13.09,4.28
+Mauritius,2013,0.96,8.84,0.16
+Mauritius,2010,,8.47,0.15
+Mexico,2013,3.51,102.07,
+Mexico,2010,,110.08,
+Micronesia (Federated States of),2013,4.83,117.82,0.00
+Micronesia (Federated States of),2010,,22.75,0.00
+Monaco,2013,10.57,,
+Monaco,2010,,,
+Mongolia,2013,2.50,41.03,16.34
+Mongolia,2010,,42.27,16.84
+Montenegro,2013,2.09,15.93,2.90
+Montenegro,2010,,2.85,
+Myanmar,2013,0.63,3.79,0.95
+Myanmar,2010,,4.21,1.06
+Namibia,2013,1.91,12.76,2.30
+Namibia,2010,,12.88,2.32
+Nauru,2013,9.95,,
+Nauru,2010,,,
+Nepal,2013,0.38,2.51,0.72
+Nepal,2010,,2.33,0.67
+Netherlands,2013,0.76,,
+Netherlands,2010,,,
+Nicaragua,2013,0.95,14.64,2.60
+Nicaragua,2010,,15.38,2.73
+Niger,2013,0.55,13.98,4.97
+Niger,2010,,16.07,5.71
+Oman,2013,1.35,2.78,2.04
+Oman,2010,,3.63,2.66
+Pakistan,2013,0.53,2.98,0.83
+Pakistan,2010,,3.13,0.87
+Panama,2013,0.91,12.42,10.04
+Panama,2010,,13.65,11.03
+Papua New Guinea,2013,1.57,35.51,9.25
+Papua New Guinea,2010,,37.91,9.87
+Paraguay,2013,2.43,9.66,1.73
+Paraguay,2010,,10.18,1.83
+Philippines,2013,1.81,,
+Philippines,2010,,,
+Poland,2013,0.94,,
+Poland,2010,,,
+Portugal,2013,,3.08,0.18
+Portugal,2010,,3.06,0.18
+Republic of Korea,2013,3.42,,56.47
+Republic of Korea,2010,,,57.73
+Republic of Moldova,2013,2.12,29.39,10.09
+Republic of Moldova,2010,,31.32,
+Romania,2013,1.68,0.02,0.06
+Romania,2010,,0.02,0.06
+Russian Federation,2010,,,
+Saint Kitts and Nevis,2013,7.38,0.00,31.37
+Saint Kitts and Nevis,2010,,0.00,32.44
+Saint Lucia,2013,1.65,18.65,
+Saint Lucia,2010,,19.51,
+Saint Vincent and the Grenadines,2013,0.00,35.66,0.91
+Saint Vincent and the Grenadines,2010,,35.67,0.91
+Samoa,2013,4.20,0.00,1.58
+Samoa,2010,,0.00,1.64
+San Marino,2013,3.18,9.54,0.00
+San Marino,2010,,9.51,0.00
+Sao Tome and Principe,2013,,14.51,2.07
+Sao Tome and Principe,2010,,16.93,2.42
+Saudi Arabia,2013,1.04,0.00,0.00
+Saudi Arabia,2010,,0.00,0.00
+Senegal,2013,0.16,6.87,0.54
+Senegal,2010,,7.81,0.61
+Serbia,2013,1.09,1.66,1.66
+Serbia,2010,,1.60,1.60
+Seychelles,2013,1.08,20.47,5.39
+Seychelles,2010,,21.96,5.78
+Sierra Leone,2013,,,1.21
+Sierra Leone,2010,,,1.26
+Singapore,2013,0.50,59.22,
+Singapore,2010,,63.01,
+Slovakia,2013,1.54,0.29,
+Slovakia,2010,,0.29,
+Slovenia,2013,1.25,4.01,2.75
+Slovenia,2010,,3.15,
+South Africa,2013,0.67,5.88,0.55
+South Africa,2010,,6.19,0.58
+Spain,2013,1.63,,
+Spain,2010,,,
+Sri Lanka,2013,0.10,272.64,
+Sri Lanka,2010,,278.04,
+Sudan,2013,1.35,10.77,3.68
+Sudan,2010,,9.39,3.21
+Suriname,2013,0.37,45.25,1.11
+Suriname,2010,,46.51,1.14
+Swaziland,2013,0.80,12.97,0.64
+Swaziland,2010,,13.66,0.67
+Tajikistan,2013,4.68,20.72,10.23
+Tajikistan,2010,,24.73,12.21
+Thailand,2013,1.84,42.29,
+Thailand,2010,,41.00,
+The former Yugoslav republic of Macedonia,2013,4.08,,
+Togo,2013,0.60,,10.94
+Togo,2010,,,12.38
+Tonga,2013,3.80,14.24,13.29
+Tonga,2010,,14.42,13.45
+Trinidad and Tobago,2013,,7.83,0.30
+Trinidad and Tobago,2010,,7.83,0.30
+Tunisia,2013,2.33,18.72,
+Tunisia,2010,,19.64,
+Turkey,2013,1.55,10.03,0.27
+Turkey,2010,,10.33,0.28
+Tuvalu,2013,10.13,,
+Uganda,2013,0.40,9.59,3.92
+Uganda,2010,,8.99,3.77
+Uruguay,2013,3.93,17.61,1.17
+Uruguay,2010,,17.81,1.19
+Vanuatu,2013,2.37,118.69,15.43
+Vanuatu,2010,,125.18,16.27
+Yemen,2013,2.97,11.37,4.75
+Yemen,2010,,11.53,4.82
+Zambia,2013,0.45,1.18,8.33
+Zambia,2010,,1.31,9.25
+Zimbabwe,2013,0.52,0.00,9.41
+Zimbabwe,2010,,0.00,10.59
