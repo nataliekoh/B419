@@ -4,5 +4,12 @@
     "WHO_water+sani+hyg" : "http://apps.who.int/gho/data/node.main.46?lang=en",
     "WHO_life" : "http://apps.who.int/gho/data/node.main.688?lang=en",
     "WHO_alcohol" : "http://apps.who.int/gho/data/node.main.A1026?lang=en",
+    "WHO_tobacco" : "http://apps.who.int/gho/data/node.main.65?lang=en",
+    "WHO_diabetes" : "http://apps.who.int/gho/data/node.main.A865DIABETES?lang=en", 
+    "WHO_childnutrition" : "http://apps.who.int/gho/data/node.main.55?lang=en", 
+    "WHO_tbtreatments" : "http://apps.who.int/gho/data/node.main.493?lang=en", 
+    "WHO_tbresistance" : "http://apps.who.int/gho/data/node.main.MDRTB?lang=en",
+    "WHO_popdensity" : "http://apps.who.int/gho/data/node.main.URBPOP?lang=en", 
+    "WHO_healthcare" : "http://apps.who.int/gho/data/node.main.506?lang=en"
   }
 }
