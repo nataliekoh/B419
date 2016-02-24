@@ -5,22 +5,36 @@ file = readtable('data/all_condensed_v3.csv');
 
 %% basic descriptions
 % col = desc
-% 1 = year
-% 2 = # of TB
-% 3 = % of TB patients with known HIV status
-% 4 = % of TB patients (tested) that are HIV-positive
-% 5 = % of HIV + TB patients on CPT
-% 6 = % of HIV + TB patients on ART
+% 2 = year
+% 3 = # of TB
+% 4 = TB patients with known HIV status (%)
+% 5 = TB patients (tested) that are HIV-positive (%)
+% 6 = HIV + TB patients on CPT (%)
+% 7 = HIV + TB patients on ART (%)
+% 24 = Pop (thousands)
+% 25 = Pop under 15 (%)
+% 26 = Pop over 60 (%)
 
+unique_countries = unique(file(:, 1));
 
-% todo - merge cote d'ivoire
-unique_countries = numel(unique(file(:, 2)));
-
-% view afghanistan # of TB
-afghan_i = find(strcmp(file{:, 1}, 'Afghanistan') == 1);
-
-afghan_years = file{afghan_i, 2};
-afghan_nTB = file{afghan_i, 3};
+%% TB prevalence calculator
+% will probably move into function 
 
 figure;
-plot(afghan_years, afghan_nTB);
+title('TB prevalence (# of TB patients/population)');
+xlabel('Year');
+ylabel('% of population with TB');
+hold on;
+
+n_countries = 10;
+for i = 1:n_countries
+    country_name = unique_countries{i, 1};
+    
+    country_indices = find(strcmp(file{:, 1}, country_name) == 1);
+    years = file{country_indices, 2};
+    nTB_per_pop = file{country_indices, 3} ./ file{country_indices, 24};
+    
+    plot(years, nTB_per_pop, '.-');
+end;
+
+legend(unique_countries{1:n_countries, 1});
