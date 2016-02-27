@@ -4,8 +4,6 @@
 % as where this script is.
 file = readtable('data/all_condensed_v3.csv');
 
-cd 'data-analyses'; % functions in data-analyses folder.
-
 %% basic descriptions
 % col = desc
 % 2 = year
@@ -44,5 +42,6 @@ legend(unique_countries{1:n_countries, 1});
 
 %% Data pull
 
+cd 'data-analyses'; % function in data-analyses folder.
 test = getAllDataForYear(file, 2005);
 test2 = getAllYearsForCountry(file, 'Afghanistan');
