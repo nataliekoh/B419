@@ -2,7 +2,7 @@
 
 % Make sure working directory is set as B419 folder, NOT the same folder 
 % as where this script is.
-file = readtable('data/all_condensed_v4.csv');
+file = readtable('data/all_condensed_v6.csv');
 
 cd 'data-analyses'; % functions in data-analyses folder.
 
@@ -63,7 +63,7 @@ ylabel('Number of countries');
 
 %% plot testing
 figure;
-suptitle('TB prevalence per population versus different riskfactors (TB prevalence/pop in % on y-axis)');
+suptitle('TB prevalence per population versus different risk factors (TB prevalence/pop in % on y-axis)');
 labels = fieldnames(file);
 for i = 5:27,
     subplot(4, 6, i-4);

@@ -1,0 +1,28 @@
+
+
+
+
+No_TB = Total number of notified TB cases
+Per_TBwithHIV = TB patients with known HIV status (%)
+Per_TBwithHIV_tested = Tested TB patients HIV-positive (%)
+Per_TBwithHIV_CPT = HIV-positive TB patients on CPT (%)
+Per_TBwithHIV_ART = HIV-positive TB patients on ART (%)
+Per_new_RRorMDR_TBres = Confirmed cases of RR-/MDR-TB
+No_RRorMDR_TBres = New bacteriologically confirmed cases tested for RR-/MDR-TB (%)
+Per_success_treat_oldTBcases = Treatment success rate: previously treated TB cases (%)
+Per_success_treat_newTBcases = Treatment success rate: new TB cases (%)
+Prevalence_female_smoking = Prevalence of smoking any tobacco product among females aged >= 15 years
+Prevalence_male_smoking = Prevalence of smoking any tobacco product among males aged >= 15 years
+Alcohol_consumption_liters_per_cap = Recorded alcohol per capita (15+) consumption (in litres of pure alcohol)
+Diabetes_mortality_rate = Age-standardized mortality rate by cause (per 100 000 population)
+Hospital_density = Total density per 100 000 population: Hospitals
+Healthposts_density = Total density per 100 000 population: Health posts
+Heathcentres_density = Total density per 100 000 population: Health centres
+Per_cleanwater_access = Population using improved drinking-water sources (%)
+Per_sanitation_access = Population using improved sanitation facilities (%)
+Life_expectancy = Life expectancy at birth (years)
+Per_urban_pop_2010 = Population living in urban areas (%)
+Per_childbelow5_underweight = Children aged <5 years underweight (%)
+Pop = Population (in thousands) total
+Pop_under_15 = Population proportion under 15 (%)
+Pop_over_60 = Population proportion over 60 (%)
