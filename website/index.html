@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div class="jumbotron">
+        <div class="container">
+            <h1>Biology 419 - Course Project</h1>
+            <p>Tuberculosis Prevalence in Relation to Risk Factors</p>
+            <p>By Vincent Wu and Natalie Koh</p>
+        </div>
+	</div>
+
+    <div class="container">
+        <h2>About</h2>
+        <p>All data taken from <a href="http://apps.who.int/gho/data/node.home">WHO databases</a> and compiled using R, Python, and Matlab. More data and visualizations will be shown at a later time. To learn more about our project, please visit <a href="https://github.com/nataliekoh/B419">our Github repo</a> where our data and code exists.</p>
+
+        <h2>Credits</h2>
+        <p>The map visualizations (choropleth) are generated from JavaScript libraries (<a href="https://d3js.org/">d3</a>, <a href="https://github.com/mbostock/topojson">topojson</a>, and <a href="http://datamaps.github.io/">DataMaps</a>).</p>
+    </div>
+
+    <div class="container">
+        <h2>TB prevalence in 2010 (% of population with TB)</h2>
+        <p>Tip! Hover to see country and TB prevalence.</p>
+        <div id="prev_map"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+    <script src="js/datamaps.world.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
