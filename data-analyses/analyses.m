@@ -62,13 +62,18 @@ xlabel('Percentage of population with TB');
 ylabel('Number of countries');
 
 %% plot testing
-figure;
-suptitle('TB prevalence per population versus different risk factors (TB prevalence/pop in % on y-axis)');
-labels = fieldnames(file);
+count = 1;
+xlabels = readtable('subplot_labels.csv');
 for i = 5:27,
-    subplot(4, 6, i-4);
+    if mod(count, 7) == 0 || count == 1
+        figure;
+        count = 1;
+    end;
+    subplot(3, 2, count);
+    count = count + 1;
     plot(data_2010{:, i}, TBprev_2010, '.');
-    title(['col #', num2str(i)]);
+    ylabel('% population with TB');
+    xlabel(xlabels{i, 1});
 end;
 
 %%
