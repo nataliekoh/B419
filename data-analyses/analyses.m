@@ -75,3 +75,8 @@ end;
 [coeff,score,pcvar, mu] = ppca(data_2010{:, [5:14,18,23:27]}, 1);
 % figure;
 % scatter(score(:,1), score(:,2), TBprev_2010);
+
+%% world map test
+
+ax = worldmap('Africa');
+geoshow(ax, land, 'FaceColor', [0.5 0.7 0.5]);
