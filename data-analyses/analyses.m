@@ -2,6 +2,7 @@
 
 % Make sure working directory is set as B419 folder, NOT the same folder 
 % as where this script is.
+cd '..';
 file = readtable('data/all_condensed_v6.csv');
 
 cd 'data-analyses'; % functions in data-analyses folder.
@@ -56,7 +57,7 @@ figure;
 hold on;
 histogram(TBprev_2005, 'BinWidth', h_binwidth);
 histogram(TBprev_2010, 'BinWidth', h_binwidth);
-legend('2005', '2010', '2013');
+legend('2005', '2010');
 title('TB prevalence in 2005 vs 2010');
 xlabel('Percentage of population with TB');
 ylabel('Number of countries');
@@ -76,12 +77,27 @@ for i = 5:27,
     xlabel(xlabels{i, 1});
 end;
 
-%%
-[coeff,score,pcvar, mu] = ppca(data_2010{:, [5:14,18,23:27]}, 1);
-% figure;
-% scatter(score(:,1), score(:,2), TBprev_2010);
+%% pca
+% [coeff,score,pcvar, mu] = ppca(data_2010{:, [5:14,18,23, 26,27]}, 3);
 
-%% world map test
+[coeff, score, var] = pca(data_2010{:, [5:14,18,23, 26,27]}, 'algorithm', 'als');
+stairs(cumsum(var) / sum(var));
 
-ax = worldmap('Africa');
-geoshow(ax, land, 'FaceColor', [0.5 0.7 0.5]);
+%% plot projection onto pc
+qual_prev = cell(numel(TBprev_2010), 1);
+
+% http://www.tbfacts.org/tb-statistics/
+for i = 1:numel(TBprev_2010)
+    if TBprev_2010(i, 1) < 0.1
+        qual_prev{i, 1} = 'Low';
+    elseif TBprev_2010(i, 1) < 0.3
+        qual_prev{i, 1} = 'Medium';
+    elseif TBprev_2010(i, 1) >= 0.3
+        qual_prev{i, 1} = 'High';
+    else
+        qual_prev{i, 1} = 'N/A';
+    end
+end;
+
+figure;
+gscatter(score(:,1), score(:,2), qual_prev);
