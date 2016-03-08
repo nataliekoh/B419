@@ -2,6 +2,14 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic);
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
 
+/*colors
+#468966
+#FFF0A5
+#FFB03B
+#B64926
+#8E2800
+*/
+
 body {
     font-family: "Open Sans", Helvetica, sans-serif;
     font-size: 16px;
@@ -12,8 +20,12 @@ h1, h2, h3 {
     font-weight: 300;
 }
 
-#prev_map {
-    position: relative;
-    width: auto;
-    height: 500px;
+h2 {
+    padding-left: 0.3em;
+    border-left: #468966 solid 2px;
+}
+
+h3 {
+    padding-left: 0.3em;
+    border-left: #FFB03B solid 2px;
 }
