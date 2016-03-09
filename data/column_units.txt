@@ -7,8 +7,8 @@ Per_TBwithHIV = TB patients with known HIV status (%)
 Per_TBwithHIV_tested = Tested TB patients HIV-positive (%)
 Per_TBwithHIV_CPT = HIV-positive TB patients on CPT (%)
 Per_TBwithHIV_ART = HIV-positive TB patients on ART (%)
-Per_new_RRorMDR_TBres = Confirmed cases of RR-/MDR-TB
-No_RRorMDR_TBres = New bacteriologically confirmed cases tested for RR-/MDR-TB (%)
+Per_new_RRorMDR_TBres = New bacteriologically confirmed cases tested for RR-/MDR-TB (%)
+No_RRorMDR_TBres = Confirmed cases of RR-/MDR-TB
 Per_success_treat_oldTBcases = Treatment success rate: previously treated TB cases (%)
 Per_success_treat_newTBcases = Treatment success rate: new TB cases (%)
 Prevalence_female_smoking = Prevalence of smoking any tobacco product among females aged >= 15 years
