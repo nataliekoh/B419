@@ -131,7 +131,7 @@ for i = 1:n_trials
     % classification trees
     tree = fitctree(score(train, 1:6), qual_prev(train, :));
     label_tree = predict(tree, score(test, 1:6));
-    all_cv_tree(i) = mean(strcmp(qual_prev(test, :), label_tree));
+    all_cv_tree(i) = mean(strcmp(qual_prev(test), label_tree));
 end;
 
 disp(mean(all_cv_tree));
