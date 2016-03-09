@@ -3,7 +3,7 @@
 % Make sure working directory is set as B419 folder, NOT the same folder 
 % as where this script is.
 cd '..';
-file = readtable('data/all_condensed_v6.csv');
+file = readtable('data/all_condensed_v7.csv');
 
 cd 'data-analyses'; % functions in data-analyses folder.
 
@@ -78,26 +78,42 @@ for i = 5:27,
 end;
 
 %% pca
-% [coeff,score,pcvar, mu] = ppca(data_2010{:, [5:14,18,23, 26,27]}, 3);
+clean_indices = find(~isnan(TBprev_2010) == 1);
+clean_2010 = TBprev_2010(clean_indices);
+clean_2010_countries = unique_countries{clean_indices, 1};
+clean_2010_data = data_2010{clean_indices, [5:14,18,23,26,27]};
 
-[coeff, score, var] = pca(data_2010{:, [5:14,18,23, 26,27]}, 'algorithm', 'als');
+[coeff, score, var] = pca(clean_2010_data, 'algorithm', 'als');
 stairs(cumsum(var) / sum(var));
 
 %% plot projection onto pc
-qual_prev = cell(numel(TBprev_2010), 1);
+qual_prev = cell(numel(clean_2010), 1);
 
 % http://www.tbfacts.org/tb-statistics/
-for i = 1:numel(TBprev_2010)
-    if TBprev_2010(i, 1) < 0.1
-        qual_prev{i, 1} = 'Low';
-    elseif TBprev_2010(i, 1) < 0.3
-        qual_prev{i, 1} = 'Medium';
-    elseif TBprev_2010(i, 1) >= 0.3
+for i = 1:numel(clean_2010)
+    if clean_2010(i, 1) < 0.2
+        qual_prev{i, 1} = 'Not-High';
+    elseif clean_2010(i, 1) >= 0.2
         qual_prev{i, 1} = 'High';
-    else
-        qual_prev{i, 1} = 'N/A';
     end
 end;
 
 figure;
 gscatter(score(:,1), score(:,2), qual_prev);
+
+%% lda classification
+lda = fitcdiscr(score(:, 1:6), qual_prev);
+label_lda = predict(lda, score(:, 1:6));
+cv_lda = mean(strcmp(qual_prev, label_lda));
+disp(cv_lda);
+
+figure;
+gscatter(score(:,1), score(:,2), qual_prev);
+hold on;
+% 
+% lda.ClassNames([1 2])
+% K = lda.Coeffs(1,2).Const;
+% L = lda.Coeffs(1,2).Linear;
+% f = @(x1,x2) K + L(1)*x1 + L(2)*x2;
+% sample_x = -200:400;
+% plot(sample_x, sample_x * L(1) + sample_x * L(2) + K);
