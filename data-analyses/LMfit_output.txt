@@ -1,0 +1,143 @@
+mdlPC_2007 = 
+
+
+Linear regression model:
+    y ~ 1 + x1 + x2 + x3 + x4 + x5 + x6
+
+Estimated Coefficients:
+                    Estimate          SE         tStat        pValue  
+                   ___________    __________    ________    __________
+
+    (Intercept)       0.092626     0.0093536      9.9026    1.2327e-18
+    x1               8.033e-05    4.8654e-05      1.6511       0.10052
+    x2              0.00013543    0.00017498     0.77396          0.44
+    x3             -0.00013455    0.00021947    -0.61306       0.54063
+    x4             -0.00091791    0.00024668     -3.7211    0.00026709
+    x5              0.00034245    0.00028011      1.2226       0.22314
+    x6               0.0012674    0.00040316      3.1438     0.0019597
+
+
+Number of observations: 182, Error degrees of freedom: 175
+Root Mean Squared Error: 0.126
+R-squared: 0.143,  Adjusted R-Squared 0.114
+F-statistic vs. constant model: 4.88, p-value = 0.000123
+
+mdlPC_2008 = 
+
+
+Linear regression model:
+    y ~ 1 + x1 + x2 + x3 + x4 + x5 + x6
+
+Estimated Coefficients:
+                    Estimate          SE         tStat       pValue  
+                   ___________    __________    _______    __________
+
+    (Intercept)       0.092167     0.0083636      11.02    5.8113e-22
+    x1              0.00013475     5.253e-05     2.5652      0.011117
+    x2             -0.00070656    0.00013524    -5.2244    4.7505e-07
+    x3              -0.0001925    0.00018592    -1.0354       0.30185
+    x4              0.00020016    0.00024528    0.81603       0.41555
+    x5              0.00011776    0.00027903    0.42203        0.6735
+    x6               0.0018037    0.00036817     4.8992    2.1176e-06
+
+
+Number of observations: 189, Error degrees of freedom: 182
+Root Mean Squared Error: 0.115
+R-squared: 0.248,  Adjusted R-Squared 0.223
+F-statistic vs. constant model: 9.98, p-value = 1.6e-09
+
+mdlPC_2009 = 
+
+
+Linear regression model:
+    y ~ 1 + x1 + x2 + x3 + x4 + x5 + x6
+
+Estimated Coefficients:
+                    Estimate          SE         tStat       pValue  
+                   ___________    __________    _______    __________
+
+    (Intercept)       0.091687     0.0089088     10.292    6.8742e-20
+    x1              3.1475e-05    4.5212e-05    0.69618        0.4872
+    x2               0.0004493    0.00013689     3.2823     0.0012331
+    x3             -0.00069337    0.00019911    -3.4824    0.00062164
+    x4              4.9044e-05    0.00026024    0.18845       0.85073
+    x5              0.00050863     0.0003556     1.4304       0.15432
+    x6               0.0017844    0.00041822     4.2667    3.1777e-05
+
+
+Number of observations: 190, Error degrees of freedom: 183
+Root Mean Squared Error: 0.123
+R-squared: 0.193,  Adjusted R-Squared 0.167
+F-statistic vs. constant model: 7.31, p-value = 5.13e-07
+
+mdlPC_2010 = 
+
+
+Linear regression model:
+    y ~ 1 + x1 + x2 + x3 + x4 + x5 + x6
+
+Estimated Coefficients:
+                    Estimate          SE         tStat        pValue  
+                   ___________    __________    ________    __________
+
+    (Intercept)       0.090008     0.0089427      10.065    3.1775e-19
+    x1              0.00027245    5.7188e-05      4.7641    3.8638e-06
+    x2             -0.00014707    0.00010856     -1.3547       0.17719
+    x3             -0.00032401    0.00012476     -2.5972      0.010168
+    x4              0.00020667    0.00017106      1.2082       0.22855
+    x5              0.00021061    0.00020061      1.0499       0.29517
+    x6             -0.00012259    0.00025246    -0.48557       0.62785
+
+
+Number of observations: 189, Error degrees of freedom: 182
+Root Mean Squared Error: 0.123
+R-squared: 0.158,  Adjusted R-Squared 0.131
+F-statistic vs. constant model: 5.7, p-value = 1.86e-05
+
+mdlPC_2011 = 
+
+
+Linear regression model:
+    y ~ 1 + x1 + x2 + x3 + x4 + x5 + x6
+
+Estimated Coefficients:
+                    Estimate          SE         tStat        pValue  
+                   ___________    __________    ________    __________
+
+    (Intercept)        0.08799     0.0081023       10.86    1.4361e-21
+    x1              0.00013299    4.6518e-05      2.8589      0.004739
+    x2             -0.00088481    0.00018295     -4.8363     2.775e-06
+    x3             -0.00019038    0.00021101    -0.90223       0.36811
+    x4              0.00021514     0.0002656     0.81001       0.41898
+    x5             -7.0397e-05    0.00031309    -0.22485       0.82234
+    x6               0.0012408    0.00037251      3.3309     0.0010449
+
+
+Number of observations: 192, Error degrees of freedom: 185
+Root Mean Squared Error: 0.112
+R-squared: 0.193,  Adjusted R-Squared 0.167
+F-statistic vs. constant model: 7.37, p-value = 4.37e-07
+
+mdlPC_2012 = 
+
+
+Linear regression model:
+    y ~ 1 + x1 + x2 + x3 + x4 + x5 + x6
+
+Estimated Coefficients:
+                    Estimate          SE         tStat        pValue  
+                   ___________    __________    ________    __________
+
+    (Intercept)       0.086078     0.0076635      11.232    1.3282e-22
+    x1              0.00012024     4.383e-05      2.7433     0.0066878
+    x2             -0.00087482    0.00017281     -5.0625    1.0038e-06
+    x3             -0.00011746    0.00020228    -0.58069       0.56216
+    x4              9.1855e-05    0.00025086     0.36617       0.71466
+    x5             -8.6685e-05    0.00029505     -0.2938       0.76925
+    x6               0.0011011    0.00035072      3.1397     0.0019724
+
+
+Number of observations: 190, Error degrees of freedom: 183
+Root Mean Squared Error: 0.106
+R-squared: 0.193,  Adjusted R-Squared 0.166
+F-statistic vs. constant model: 7.29, p-value = 5.35e-07

@@ -65,6 +65,7 @@ opts = struct( 'maxiters', 70,...
 
 % Reconstruct the data
 Xrec2010 = repmat(Mu10, 1, size(subset_2010,2)) + A10*S10; 
+[C, S, L] = pca(Xrec2010);
 
 %% Use the ALS on 2010 (start with year 2010) 
 
@@ -355,17 +356,12 @@ anova(mdlPC_2010, 'summary')
 anova(mdlPC_2011, 'summary')
 anova(mdlPC_2012, 'summary')
 
-%%
-
-figure;
-scatter(PC_6_2010, response_2010);
-
-%%
+%% Crossval Prediction
 
 ypred = predict(mdl, test_pred_PC2010);
 nanmean(ypred) - nanmean(test_resp_PC2010)
 
-%% Exclude outliers
+%% Exclude outliers and refit models
 plotResiduals(mdlPC_2010);
 outlPC = find(mdlPC_2010.Residuals.Raw > 0.6);
 mdlPC2_2010 = fitlm(PC_6, response_2010,...
@@ -375,13 +371,24 @@ plotResiduals(mdlPC2_2010);
 figure;
 plotResiduals(mdlPC2_2010,'fitted');
 
-%%
-betaPCR = regress(response_2010, score(:,1:6));
-betaPCR = coeff(:,1:6)*betaPCR;
-betaPCR = [mean(y) - mean(X)*betaPCR; betaPCR];
-yfitPCR = [ones(n,1) X]*betaPCR;
-RSS_PCR = sum((y-yfitPCR).^2);
-rsquaredPCR = 1 - RSS_PCR/TSS
+%% Try quadratic model fitting
+
+mdlPCquad_2010 = fitlm(PC_6_2010, response_2010,...
+    'purequadratic')
+mdlPCquad_2012 = fitlm(PC_6_2012, response_2012,...
+    'purequadratic')
+
+%% Stepwise regression
+
+mdlPCstep_2010 = stepwiselm(PC_6_2010,response_2010,'linear')
+
+%% --- Working section ---
+% betaPCR = regress(response_2010, score(:,1:6));
+% betaPCR = coeff(:,1:6)*betaPCR;
+% betaPCR = [mean(y) - mean(X)*betaPCR; betaPCR];
+% yfitPCR = [ones(n,1) X]*betaPCR;
+% RSS_PCR = sum((y-yfitPCR).^2);
+% rsquaredPCR = 1 - RSS_PCR/TSS
 
 
 
