@@ -1,0 +1,78 @@
+For the first 6 principal components, which variables are most heavily weighted?
+
+risk7 = 
+
+           Variable            Variable_Col    PC_Loading
+    _______________________    ____________    __________
+
+    'No_RRorMDR_TBres'         6               0.99766   
+    'Per_TBwithHIV_CPT'        3               0.74383   
+    'Per_new_RRorMDR_TBres'    5               0.68065   
+    'Per_TBwithHIV_ART'        4               0.72574   
+    'Per_TBwithHIV_tested'     2               0.66979   
+    'Per_TBwithHIV'            1               0.65459   
+
+
+risk8 = 
+
+           Variable            Variable_Col    PC_Loading
+    _______________________    ____________    __________
+
+    'No_RRorMDR_TBres'         6               0.99162   
+    'Per_new_RRorMDR_TBres'    5               0.96468   
+    'Per_TBwithHIV_ART'        4               0.62269   
+    'Per_TBwithHIV_CPT'        3               0.74702   
+    'Per_TBwithHIV'            1               0.67106   
+    'Per_TBwithHIV_tested'     2               0.87143   
+
+
+risk9 = 
+
+           Variable            Variable_Col    PC_Loading
+    _______________________    ____________    __________
+
+    'No_RRorMDR_TBres'         6               0.99215   
+    'Per_TBwithHIV_CPT'        3               0.84535   
+    'Per_new_RRorMDR_TBres'    5               0.64147   
+    'Per_TBwithHIV'            1               0.89499   
+    'Per_TBwithHIV_ART'        4               0.69524   
+    'Per_TBwithHIV_tested'     2               0.96924   
+
+
+risk10 = 
+
+           Variable            Variable_Col    PC_Loading
+    _______________________    ____________    __________
+
+    'No_RRorMDR_TBres'          6              0.98647   
+    'Per_TBwithHIV_ART'         4              0.96543   
+    'Per_new_RRorMDR_TBres'     5              0.72247   
+    'Per_new_RRorMDR_TBres'     5              0.63997   
+    'Healthposts_density'      11              0.68775   
+    'Per_TBwithHIV'             1              0.84788   
+
+
+risk11 = 
+
+               Variable               Variable_Col    PC_Loading
+    ______________________________    ____________    __________
+
+    'No_RRorMDR_TBres'                6                0.9986   
+    'Per_new_RRorMDR_TBres'           5               0.84174   
+    'Per_TBwithHIV_ART'               4               0.70709   
+    'Per_TBwithHIV'                   1                0.8997   
+    'Per_success_treat_oldTBcases'    7               0.74437   
+    'Per_TBwithHIV_tested'            2               0.83476   
+
+
+risk12 = 
+
+               Variable               Variable_Col    PC_Loading
+    ______________________________    ____________    __________
+
+    'No_RRorMDR_TBres'                6               0.99747   
+    'Per_new_RRorMDR_TBres'           5               0.90176   
+    'Per_TBwithHIV_CPT'               3               0.80658   
+    'Per_TBwithHIV'                   1               0.73352   
+    'Per_TBwithHIV_ART'               4               0.73008   
+    'Per_success_treat_oldTBcases'    7               0.75445   
