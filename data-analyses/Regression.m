@@ -36,6 +36,15 @@ xyear_2012 = year_2012(:, 2:size(year_2012,2));
 xyear_2013 = year_2013(:, 2:size(year_2013,2));
 xheaders_year = headers_new(4:numel(headers_new));
 
+% Standardize data for PCA
+xsyear_2007 = zscore_xnan(xyear_2007); 
+xsyear_2008 = zscore_xnan(xyear_2008); 
+xsyear_2009 = zscore_xnan(xyear_2009); 
+xsyear_2010 = zscore_xnan(xyear_2010); 
+xsyear_2011 = zscore_xnan(xyear_2011); 
+xsyear_2012 = zscore_xnan(xyear_2012); 
+xsyear_2013 = zscore_xnan(xyear_2013); 
+
 %% Quick test for VBPCA vs ALSPCA using subset of data from 2010
 % Subset the data so that there are fewer NaN values to impute
 % col 5-14, 18, 23, 26, 27 in data_2010 from analyses.m
@@ -183,6 +192,15 @@ print(fig1, 'img/PCvariance_2010', '-depsc');
 
 fig2 = figure;
 biplot(coeff10(:,1:2),'scores',score10(:,1:2),'varlabels',headers_subset);
+%%
+N = 6;
+x = 1:14; 
+y = coeff10(:,1:6); 
+ymax = zeros(N,1);
+for i = 1:N,
+    ymax(i,1) = max(y(:, i));
+end
+xmax = [6 4 5 5 11 1]; % from PC_variable_breakdown.txt
 
 fig3 = figure;
 plot(1:14,coeff10(:,1:6),'-');
@@ -190,8 +208,20 @@ xlabel('Variable');
 ylabel('PCA Loading');
 title('PCA Loadings on Risk Factors for 2010');
 legend({'1st PC' '2nd PC' '3rd PC'  ...
-	'4th PC', '5th PC', '6th PC'},'location','NW');
-print(fig3, 'img/PCloadings_2010', '-depsc');
+	'4th PC', '5th PC', '6th PC'},'location','best');
+
+str1 = 'No. confirmed TB with RR/MDR';
+text(xmax(1)+0.3,ymax(1,1)-0.03,str1,'HorizontalAlignment','left');
+str2 = '% TB-HIV under ART';
+text(xmax(2)+0.3,ymax(2,1)-0.1,str2,'HorizontalAlignment','left');
+str3 = '% new RR/MDR TBres'; 
+text(xmax(3)+0.3,ymax(3,1)-0.1,str3,'HorizontalAlignment','left');
+str5 = 'Health posts density'; 
+text(xmax(5)+0.3,ymax(5,1)-0.1,str5,'HorizontalAlignment','left');
+str6 = '% TB with HIV'; 
+text(xmax(6)+0.3,ymax(6,1)-0.1,str6,'HorizontalAlignment','left');
+
+%print(fig3, 'img/PCloadings_2010', '-depsc');
 
 %% Use the ALS on 2011
 
@@ -383,6 +413,23 @@ mdlPCquad_2012 = fitlm(PC_6_2012, response_2012,...
 mdlPCstep_2010 = stepwiselm(PC_6_2010,response_2010,'linear')
 
 %% --- Working section ---
+
+% Lasso regression on 2010 PC scores
+    % output: Fitted coefficients p-by-L matrix, 
+    % where p is the number of predictors (columns) in X
+    % L is the number of Lambda values.
+[Blasso_2010 Fitlasso_2010] = lasso(PC_6_2010, response_2010, 'CV', 10);
+lassoPlot(Blasso_2010, Fitlasso_2010, 'PlotType', 'CV');
+Fitlasso_2010.LambdaMinMSE
+Fitlasso_2010.IndexMinMSE
+    % This confirms that PC1 and PC3 are the only significant predictors of
+    % TB prevalence for 2010
+
+% Lasso regression on 2010 Variables
+    % reconstruct data from ALS
+    [coeff10,score10,latent10,~,~,mu10] = pca(raw_2010, 'Algorithm', 'als');
+    recon_2010 = score10*coeff10' + repmat(mu10,size(raw_2010,1),1)
+
 % betaPCR = regress(response_2010, score(:,1:6));
 % betaPCR = coeff(:,1:6)*betaPCR;
 % betaPCR = [mean(y) - mean(X)*betaPCR; betaPCR];
