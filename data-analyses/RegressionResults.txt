@@ -322,3 +322,71 @@ Beta 2013: SIG = 2,11,12
          0
          0
          0
+
+// Headers for reconstructed data
+
+Years 2007-2009 & 2011
+    'Per_TBwithHIV'
+    'Per_TBwithHIV_tested'
+    'Per_TBwithHIV_CPT'
+    'Per_TBwithHIV_ART'
+    'Per_new_RRorMDR_TBres'
+    'No_RRorMDR_TBres'
+    'Per_success_treat_oldTBcases'
+    'Per_success_treat_newTBcases'
+    'Per_childbelow5_underweight'
+    'Pop'
+    'Pop_under_15'
+    'Pop_over_60'
+
+Year 2010
+    'Per_TBwithHIV'
+    'Per_TBwithHIV_tested'
+    'Per_TBwithHIV_CPT'
+    'Per_TBwithHIV_ART'
+    'Per_new_RRorMDR_TBres'
+    'No_RRorMDR_TBres'
+    'Per_success_treat_oldTBcases'
+    'Per_success_treat_newTBcases'
+    'Healthposts_density'
+    'Heathcentres_density'
+    'Per_childbelow5_underweight'
+    'Pop'
+    'Pop_under_15'
+    'Pop_over_60'
+
+Year 2012
+    'Per_TBwithHIV'
+    'Per_TBwithHIV_tested'
+    'Per_TBwithHIV_CPT'
+    'Per_TBwithHIV_ART'
+    'Per_new_RRorMDR_TBres'
+    'No_RRorMDR_TBres'
+    'Per_success_treat_oldTBcases'
+    'Per_success_treat_newTBcases'
+    'Diabetes_mortality_rate'
+    'Life_expectancy'
+    'Per_childbelow5_underweight'
+    'Pop'
+    'Pop_under_15'
+    'Pop_over_60'
+
+Year 2013
+    'Per_TBwithHIV'
+    'Per_TBwithHIV_tested'
+    'Per_TBwithHIV_CPT'
+    'Per_TBwithHIV_ART'
+    'Per_new_RRorMDR_TBres'
+    'No_RRorMDR_TBres'
+    'Per_success_treat_oldTBcases'
+    'Per_success_treat_newTBcases'
+    'Hospital_density'
+    'Healthposts_density'
+    'Heathcentres_density'
+    'Life_expectancy'
+    'Per_childbelow5_underweight'
+    'Pop'
+    'Pop_under_15'
+    'Pop_over_60'
+
+

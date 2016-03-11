@@ -53,6 +53,13 @@ xssyear_2011 = xsyear_2011(:, [1:8, 20:23]);
 xssyear_2012 = xsyear_2012(:, [1:8, 12, 18, 20:23]);
 xssyear_2013 = xsyear_2013(:, [1:8, 13:15, 18, 20:23]);
 
+%% Grab headers for xssyear____
+
+headers_A = xheaders_year([1:8, 20:23]); % for 2007,2008,2009,2011
+headers_B = xheaders_year([1:8, 14:15, 20:23]); % for 2010
+headers_C = xheaders_year([1:8, 12, 18, 20:23]); % for 2012
+headers_D = xheaders_year([1:8, 13:15, 18, 20:23]); % for 2013
+
 %% Run PCA-ALS
 
 [coeff7,score7,latent7,~,~,mu7] = pca(xssyear_2007, 'Algorithm', 'als',...
@@ -140,6 +147,16 @@ PCs_2010 = score10(:,1:6);
 PCs_2011 = score11(:,1:6);
 PCs_2012 = score12(:,1:4);
 PCs_2013 = score13(:,1:9);
+
+%% Extract the most important risk factors from PCA output
+
+risk7 = getPCvariables(headers_A, coeff7, 8)
+risk8 = getPCvariables(headers_A, coeff8, 6)
+risk9 = getPCvariables(headers_A, coeff9, 4)
+risk10 = getPCvariables(headers_B, coeff10, 6)
+risk11 = getPCvariables(headers_A, coeff11, 6)
+risk12 = getPCvariables(headers_C, coeff12, 4)
+risk13 = getPCvariables(headers_D, coeff13, 9)
 
 %% Reconstruct the data for each year
 

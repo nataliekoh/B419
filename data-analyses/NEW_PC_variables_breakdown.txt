@@ -1,0 +1,91 @@
+
+risk7 = 
+
+               Variable               Variable_Col    PC_Loading
+    ______________________________    ____________    __________
+
+    'Per_childbelow5_underweight'      9              0.92952   
+    'Per_new_RRorMDR_TBres'            5              0.51382   
+    'Per_TBwithHIV_ART'                4              0.55873   
+    'Per_TBwithHIV'                    1              0.51429   
+    'Pop'                             10               0.6475   
+    'Per_TBwithHIV_tested'             2              0.54602   
+    'Pop'                             10              0.58442   
+    'Per_success_treat_oldTBcases'     7              0.63738   
+
+
+risk8 = 
+
+               Variable               Variable_Col    PC_Loading
+    ______________________________    ____________    __________
+
+    'Per_childbelow5_underweight'     9               0.98877   
+    'Per_new_RRorMDR_TBres'           5                0.8547   
+    'Per_TBwithHIV_CPT'               3               0.77217   
+    'Per_success_treat_oldTBcases'    7               0.88266   
+    'No_RRorMDR_TBres'                6               0.82987   
+    'Per_TBwithHIV_tested'            2               0.52668   
+
+
+risk9 = 
+
+              Variable               Variable_Col    PC_Loading
+    _____________________________    ____________    __________
+
+    'Per_childbelow5_underweight'    9               0.98803   
+    'Per_TBwithHIV_ART'              4               0.54724   
+    'Per_TBwithHIV_CPT'              3               0.59372   
+    'Per_TBwithHIV_tested'           2               0.54857   
+
+
+risk10 = 
+
+               Variable               Variable_Col    PC_Loading
+    ______________________________    ____________    __________
+
+    'Per_childbelow5_underweight'     11              0.99003   
+    'Per_TBwithHIV_CPT'                3               0.7703   
+    'Healthposts_density'              9              0.77127   
+    'Healthposts_density'              9              0.58804   
+    'Per_TBwithHIV_ART'                4               0.7879   
+    'Per_success_treat_oldTBcases'     7              0.57369   
+
+
+risk11 = 
+
+               Variable               Variable_Col    PC_Loading
+    ______________________________    ____________    __________
+
+    'Per_childbelow5_underweight'     9               0.97485   
+    'Per_TBwithHIV_CPT'               3               0.81976   
+    'Per_new_RRorMDR_TBres'           5               0.78275   
+    'Per_success_treat_oldTBcases'    7               0.53418   
+    'No_RRorMDR_TBres'                6                0.5367   
+    'Per_TBwithHIV_ART'               4               0.58978   
+
+
+risk12 = 
+
+               Variable               Variable_Col    PC_Loading
+    ______________________________    ____________    __________
+
+    'Per_childbelow5_underweight'     11              0.99778   
+    'Per_TBwithHIV_CPT'                3              0.60038   
+    'No_RRorMDR_TBres'                 6              0.82584   
+    'Per_success_treat_oldTBcases'     7              0.69371   
+
+
+risk13 = 
+
+               Variable               Variable_Col    PC_Loading
+    ______________________________    ____________    __________
+
+    'Per_childbelow5_underweight'     13              0.97121   
+    'Per_TBwithHIV_CPT'                3              0.73501   
+    'Pop_under_15'                    15              0.46253   
+    'Heathcentres_density'            11              0.52651   
+    'Per_success_treat_oldTBcases'     7              0.59657   
+    'Hospital_density'                 9               0.5247   
+    'No_RRorMDR_TBres'                 6              0.77644   
+    'Healthposts_density'             10               0.4961   
+    'Per_TBwithHIV_tested'             2              0.41443   
