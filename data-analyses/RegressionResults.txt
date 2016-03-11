@@ -1,0 +1,324 @@
+
+// LINEAR REGRESSION 2007-2013:
+
+LMPCs_2007 = 
+Linear regression model:
+    y ~ 1 + x1 + x2 + x3 + x4 + x5 + x6 + x7 + x8
+
+Estimated Coefficients:
+                    Estimate        SE         tStat        pValue  
+                   __________    _________    ________    __________
+
+    (Intercept)      0.096366     0.009067      10.628     1.262e-20
+    x1              0.0096109    0.0026086      3.6844     0.0003064
+    x2              -0.017076    0.0052791     -3.2346     0.0014591
+    x3               -0.01878    0.0058535     -3.2084     0.0015909
+    x4             -0.0057853    0.0078828    -0.73391         0.464
+    x5              -0.013022    0.0080418     -1.6193        0.1072
+    x6                0.02971    0.0088529       3.356    0.00097215
+    x7             -0.0066144    0.0096979    -0.68205       0.49612
+    x8              -0.012966     0.010854     -1.1946        0.2339
+
+
+Number of observations: 182, Error degrees of freedom: 173
+Root Mean Squared Error: 0.121
+R-squared: 0.22,  Adjusted R-Squared 0.184
+F-statistic vs. constant model: 6.1, p-value = 6.51e-07
+
+LMPCs_2008 = 
+Linear regression model:
+    y ~ 1 + x1 + x2 + x3 + x4 + x5 + x6
+
+Estimated Coefficients:
+                    Estimate         SE         tStat       pValue  
+                   ___________    _________    _______    __________
+
+    (Intercept)       0.094713    0.0087495     10.825    2.1279e-21
+    x1               0.0026227    0.0010577     2.4795      0.014066
+    x2               -0.007841    0.0038332    -2.0455       0.04224
+    x3             -0.00078674    0.0044475    -0.1769       0.85979
+    x4              -0.0094326    0.0051674    -1.8254      0.069575
+    x5              -0.0084335    0.0060286    -1.3989       0.16354
+    x6                0.038272     0.006847     5.5896    8.2104e-08
+
+
+Number of observations: 189, Error degrees of freedom: 182
+Root Mean Squared Error: 0.118
+R-squared: 0.201,  Adjusted R-Squared 0.174
+F-statistic vs. constant model: 7.61, p-value = 2.65e-07
+
+LMPCs_2009 = 
+Linear regression model:
+    y ~ 1 + x1 + x2 + x3 + x4
+
+Estimated Coefficients:
+                    Estimate        SE         tStat       pValue  
+                   __________    _________    _______    __________
+
+    (Intercept)       0.09412    0.0093051     10.115    2.0119e-19
+    x1             -0.0034475    0.0008819    -3.9092    0.00012986
+    x2              -0.013397    0.0045604    -2.9377     0.0037275
+    x3               0.015231    0.0058922      2.585      0.010509
+    x4               0.015861    0.0066773     2.3754      0.018555
+
+
+Number of observations: 190, Error degrees of freedom: 185
+Root Mean Squared Error: 0.125
+R-squared: 0.16,  Adjusted R-Squared 0.142
+F-statistic vs. constant model: 8.8, p-value = 1.58e-06
+
+LMPCs_2010 = 
+Linear regression model:
+    y ~ 1 + x1 + x2 + x3 + x4 + x5 + x6
+
+Estimated Coefficients:
+                    Estimate          SE         tStat        pValue  
+                   ___________    __________    ________    __________
+
+    (Intercept)       0.092327     0.0096468      9.5707    7.8246e-18
+    x1             -0.00077794    0.00096669    -0.80474       0.42202
+    x2              -0.0066702     0.0038389     -1.7375      0.083983
+    x3              -0.0032993     0.0044647    -0.73898       0.46087
+    x4               0.0022101     0.0051693     0.42754       0.66949
+    x5               -0.010798     0.0058713     -1.8392      0.067517
+    x6              -0.0021274     0.0066248    -0.32113       0.74848
+
+
+Number of observations: 189, Error degrees of freedom: 182
+Root Mean Squared Error: 0.131
+R-squared: 0.0413,  Adjusted R-Squared 0.00971
+F-statistic vs. constant model: 1.31, p-value = 0.256
+
+LMPCs_2011 = 
+Linear regression model:
+    y ~ 1 + x1 + x2 + x3 + x4 + x5 + x6
+
+Estimated Coefficients:
+                    Estimate        SE         tStat       pValue  
+                   __________    _________    _______    __________
+
+    (Intercept)      0.086406    0.0080563     10.725    3.5288e-21
+    x1             -0.0014786    0.0011732    -1.2603       0.20916
+    x2               0.011258    0.0031008     3.6308    0.00036569
+    x3              -0.012936    0.0046514    -2.7811     0.0059786
+    x4               0.013121    0.0058022     2.2615      0.024894
+    x5               0.031376    0.0063764     4.9207    1.8998e-06
+    x6              -0.013724    0.0073447    -1.8686      0.063265
+
+
+Number of observations: 192, Error degrees of freedom: 185
+Root Mean Squared Error: 0.11
+R-squared: 0.227,  Adjusted R-Squared 0.202
+F-statistic vs. constant model: 9.07, p-value = 1.06e-08
+
+LMPCs_2012 = 
+Linear regression model:
+    y ~ 1 + x1 + x2 + x3 + x4
+
+Estimated Coefficients:
+                    Estimate         SE         tStat       pValue  
+                   __________    __________    _______    __________
+
+    (Intercept)      0.086042     0.0074182     11.599    9.9579e-24
+    x1             0.00045886    0.00055366    0.82877        0.4083
+    x2              -0.015305     0.0033837    -4.5232    1.0865e-05
+    x3               0.018804     0.0040268     4.6698    5.7815e-06
+    x4              -0.018967      0.004364    -4.3463    2.2814e-05
+
+
+Number of observations: 190, Error degrees of freedom: 185
+Root Mean Squared Error: 0.102
+R-squared: 0.246,  Adjusted R-Squared 0.229
+F-statistic vs. constant model: 15.1, p-value = 1.1e-10
+
+LMPCs_2013 = 
+Linear regression model:
+    y ~ 1 + x1 + x2 + x3 + x4 + x5 + x6 + x7 + x8 + x9
+
+Estimated Coefficients:
+                    Estimate        SE         tStat        pValue  
+                   __________    _________    ________    __________
+
+    (Intercept)        0.0869    0.0068902      12.612    1.8087e-26
+    x1              0.0048762    0.0013168      3.7031    0.00028398
+    x2             0.00017011    0.0029483    0.057697       0.95405
+    x3               0.029945     0.003586      8.3505    1.8559e-14
+    x4              0.0013892    0.0046989     0.29564       0.76785
+    x5             -0.0085094    0.0049327     -1.7251      0.086246
+    x6              0.0018634    0.0053554     0.34794       0.72829
+    x7             -0.0016927    0.0056195    -0.30123       0.76359
+    x8              0.0042917    0.0063647      0.6743         0.501
+    x9               0.014557    0.0066381       2.193      0.029604
+
+
+Number of observations: 188, Error degrees of freedom: 178
+Root Mean Squared Error: 0.0925
+R-squared: 0.34,  Adjusted R-Squared 0.306
+F-statistic vs. constant model: 10.2, p-value = 1.42e-12
+
+// LASSO REGRESSION ON PC SCORES 2007-2013:
+
+Beta 2007: all significant
+    0.0088
+   -0.0155
+   -0.0169
+   -0.0035
+   -0.0106
+    0.0270
+   -0.0038
+   -0.0097
+
+Beta 2008: all sig. except PC3
+    0.0022
+   -0.0065
+         0
+   -0.0076
+   -0.0063
+    0.0359
+
+Beta 2009: all sig. 
+   -0.0033
+   -0.0126
+    0.0142
+    0.0146
+
+Beta 2010: all sig. except PC1,3,4,6
+         0
+   -0.0033
+         0
+         0
+   -0.0057
+         0
+
+Beta 2011: all sig. 
+   -0.0015
+    0.0113
+   -0.0129
+    0.0131
+    0.0314
+   -0.0137
+
+Beta 2012: all sig.
+    0.0004
+   -0.0151
+    0.0186
+   -0.0188
+
+Beta 2013: all sig. except PC2,4,6,7,8
+    0.0037
+         0
+    0.0267
+         0
+   -0.0043
+         0
+         0
+         0
+    0.0086
+
+// LASSO REGRESSION ON RECONSTRUCTED DATA 2007-2013:
+
+Beta 2007: SIG = 2,4,6,9,11,12
+         0
+    0.0295
+         0
+   -0.0010
+         0
+    0.0130
+         0
+         0
+    0.0022
+         0
+    0.0337
+   -0.0025
+
+Beta 2008: SIG = 2,4,11,12
+         0
+    0.0248
+         0
+   -0.0072
+         0
+         0
+         0
+         0
+         0
+         0
+    0.0255
+   -0.0008
+
+Beta 2009: SIG = ALL
+   -0.0296
+    0.0463
+   -0.0055
+   -0.0138
+    0.0234
+    0.0144
+    0.0119
+   -0.0170
+   -0.0030
+    0.0138
+    0.0064
+    0.0085
+
+Beta 2010: SIG = 1,2,3,6,7,8,11,12,13,14
+    0.0125
+    0.0813
+   -0.0266
+         0
+         0
+    0.0317
+   -0.0423
+    0.0322
+         0
+         0
+    0.0017
+   -0.0039
+    0.0038
+   -0.0037
+
+Beta 2011: SIG = 2,4,5,6,8,9,11,12
+         0
+    0.0382
+         0
+   -0.0111
+   -0.0080
+    0.0175
+         0
+    0.0156
+   -0.0001
+         0
+    0.0102
+   -0.0255
+
+Beta 2012: SIG = 2,3,4,6,8,10,11,12
+         0
+    0.0164
+    0.0002
+    0.0043
+         0
+    0.0101
+         0
+   -0.0026
+         0
+   -0.0608
+    0.0009
+   -0.0028
+         0
+         0
+
+Beta 2013: SIG = 2,11,12
+         0
+    0.0079
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+    0.0029
+   -0.0502
+         0
+         0
+         0
+         0
