@@ -85,4 +85,32 @@ annotation('textbox', [0 0.9 1 0.1], ...
 print(fig7, '../img/2013_prelimplot', '-djpeg');
 
 %% Identify risk factor indexes (non-empty plots) for data analysis
+
 % SEE data-analyses/riskfactorindices.txt 
+
+%% Access sparseness of dataset
+
+data = readtable('data/condensed_with_perTB.csv');
+% n = no. of observations
+n = size(data, 1);
+sum(~isnan(table2array(new_data(:,11))))/n
+sum(~isnan(table2array(new_data(:,12))))/n
+sum(~isnan(table2array(new_data(:,13))))/n
+sum(~isnan(table2array(new_data(:,14))))/n
+sum(~isnan(table2array(new_data(:,15))))/n
+sum(~isnan(table2array(new_data(:,16))))/n
+sum(~isnan(table2array(new_data(:,17))))/n
+sum(~isnan(table2array(new_data(:,18))))/n
+
+% total number of data points available
+sum(sum(~isnan(table2array(new_data(:,3:size(new_data,2))))))
+
+% total number of data points available as %
+sum(sum(~isnan(table2array(new_data(:,3:size(new_data,2))))))/...
+    (size(table2array(new_data(:,3:size(new_data,2))),1)*...
+    size(table2array(new_data(:,3:size(new_data,2))),2))*100
+
+% 27.06% of our dataset is filled;
+% 72.94% of our dataset is made up of missing values!!!!!
+
+

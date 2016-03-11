@@ -1,7 +1,3 @@
-
-
-
-
 No_TB = Total number of notified TB cases
 Per_TBwithHIV = TB patients with known HIV status (%)
 Per_TBwithHIV_tested = Tested TB patients HIV-positive (%)
