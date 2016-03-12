@@ -235,18 +235,43 @@ anova(LMPCs_2011, 'summary')
 anova(LMPCs_2012, 'summary')
 anova(LMPCs_2013, 'summary')
 
+%% ANOVA on linear regression coefficients
+
+anova(LMPCs_2007)
+anova(LMPCs_2008)
+anova(LMPCs_2009)
+anova(LMPCs_2010) 
+anova(LMPCs_2011)
+anova(LMPCs_2012)
+anova(LMPCs_2013)
+
+%% Stepwise regression 
+
+stepwiselm(PCs_2007, response_2007, 'linear', 'Criterion', 'bic')
+stepwiselm(PCs_2008, response_2008, 'linear', 'Criterion', 'bic')
+stepwiselm(PCs_2009, response_2009, 'linear', 'Criterion', 'bic')
+stepwiselm(PCs_2010, response_2010, 'linear', 'Criterion', 'bic')
+stepwiselm(PCs_2011, response_2011, 'linear', 'Criterion', 'bic')
+stepwiselm(PCs_2012, response_2012, 'linear', 'Criterion', 'bic')
+stepwiselm(PCs_2013, response_2013, 'linear', 'Criterion', 'bic')
+
+%% Refit models without interaction using results from stepwise regression
+
+fitlm(PCs_2007, response_2007, 'y ~ x1 + x2 + x3 + x6')
+
+
 %% Lasso regression using PC scores
 % NOTE: THIS TAKES QUITE A WHILE TO RUN
 
 niter = 100;
 for i = 1:niter,
-    [Blasso_2007 Fitlasso_2007] = lasso(PCs_2007, response_2007, 'CV', 10);
-    [Blasso_2008 Fitlasso_2008] = lasso(PCs_2008, response_2008, 'CV', 10);
-    [Blasso_2009 Fitlasso_2009] = lasso(PCs_2009, response_2009, 'CV', 10);
-    [Blasso_2010 Fitlasso_2010] = lasso(PCs_2010, response_2010, 'CV', 10);
-    [Blasso_2011 Fitlasso_2011] = lasso(PCs_2011, response_2011, 'CV', 10);
-    [Blasso_2012 Fitlasso_2012] = lasso(PCs_2012, response_2012, 'CV', 10);
-    [Blasso_2013 Fitlasso_2013] = lasso(PCs_2013, response_2013, 'CV', 10);
+    [Blasso_2007 Fitlasso_2007] = lasso(PCs_2007, response_2007, 'CV', 10, 'Standardize', false);
+    [Blasso_2008 Fitlasso_2008] = lasso(PCs_2008, response_2008, 'CV', 10, 'Standardize', false);
+    [Blasso_2009 Fitlasso_2009] = lasso(PCs_2009, response_2009, 'CV', 10, 'Standardize', false);
+    [Blasso_2010 Fitlasso_2010] = lasso(PCs_2010, response_2010, 'CV', 10, 'Standardize', false);
+    [Blasso_2011 Fitlasso_2011] = lasso(PCs_2011, response_2011, 'CV', 10, 'Standardize', false);
+    [Blasso_2012 Fitlasso_2012] = lasso(PCs_2012, response_2012, 'CV', 10, 'Standardize', false);
+    [Blasso_2013 Fitlasso_2013] = lasso(PCs_2013, response_2013, 'CV', 10, 'Standardize', false);
 end
 
 %% Find lambda which gives the smallest MSE
@@ -285,13 +310,13 @@ lassoPlot(Blasso_2010, Fitlasso_2010, 'PlotType', 'CV');
 
 niter = 100;
 for i = 1:niter,
-    [BRlasso_2007 FRlasso_2007] = lasso(recon_2007, response_2007, 'CV', 10);
-    [BRlasso_2008 FRlasso_2008] = lasso(recon_2008, response_2008, 'CV', 10);
-    [BRlasso_2009 FRlasso_2009] = lasso(recon_2009, response_2009, 'CV', 10);
-    [BRlasso_2010 FRlasso_2010] = lasso(recon_2010, response_2010, 'CV', 10);
-    [BRlasso_2011 FRlasso_2011] = lasso(recon_2011, response_2011, 'CV', 10);
-    [BRlasso_2012 FRlasso_2012] = lasso(recon_2012, response_2012, 'CV', 10);
-    [BRlasso_2013 FRlasso_2013] = lasso(recon_2013, response_2013, 'CV', 10);
+    [BRlasso_2007 FRlasso_2007] = lasso(recon_2007, response_2007, 'CV', 10, 'Standardize', false);
+    [BRlasso_2008 FRlasso_2008] = lasso(recon_2008, response_2008, 'CV', 10, 'Standardize', false);
+    [BRlasso_2009 FRlasso_2009] = lasso(recon_2009, response_2009, 'CV', 10, 'Standardize', false);
+    [BRlasso_2010 FRlasso_2010] = lasso(recon_2010, response_2010, 'CV', 10, 'Standardize', false);
+    [BRlasso_2011 FRlasso_2011] = lasso(recon_2011, response_2011, 'CV', 10, 'Standardize', false);
+    [BRlasso_2012 FRlasso_2012] = lasso(recon_2012, response_2012, 'CV', 10, 'Standardize', false);
+    [BRlasso_2013 FRlasso_2013] = lasso(recon_2013, response_2013, 'CV', 10, 'Standardize', false);
 end
 
 %% Find lambda which gives the smallest MSE
@@ -321,7 +346,69 @@ BRlasso_2011(:,FRlasso_2011.IndexMinMSE)
 BRlasso_2012(:,FRlasso_2012.IndexMinMSE)
 BRlasso_2013(:,FRlasso_2013.IndexMinMSE)
 
-%% Matrix visualizations
+BRlasso_mat = [BRlasso_2007(:,FRlasso_2007.IndexMinMSE) BRlasso_2008(:,FRlasso_2008.IndexMinMSE) BRlasso_2009(:,FRlasso_2009.IndexMinMSE)];
+tmpa = vertcat(BRlasso_mat, NaN(4,3));
+tmpb = vertcat(BRlasso_2010(:,FRlasso_2010.IndexMinMSE), NaN(2,1));
+tmpc = vertcat(BRlasso_2011(:,FRlasso_2011.IndexMinMSE), NaN(4,1));
+tmpd = vertcat(BRlasso_2012(:,FRlasso_2011.IndexMinMSE), NaN(2,1));
+tmpe = vertcat(BRlasso_2013(:,FRlasso_2013.IndexMinMSE));
+BRlasso_matt = [tmpa, tmpb, tmpc, tmpd, tmpe];
+
+%% Convert matrix to table
+
+aa = table; aa.var = headers_A';
+aa.y2007 = BRlasso_2007(:,FRlasso_2007.IndexMinMSE);
+aa.y2008 = BRlasso_2008(:,FRlasso_2008.IndexMinMSE);
+aa.y2009 = BRlasso_2009(:,FRlasso_2009.IndexMinMSE);
+bb = table; bb.var = headers_B';
+bb.y2010 = BRlasso_2010(:,FRlasso_2010.IndexMinMSE);
+cc = table; cc.var = headers_A';
+cc.y2011 = BRlasso_2011(:,FRlasso_2011.IndexMinMSE);
+dd = table; dd.var = headers_C';
+dd.y2012 = BRlasso_2012(:,FRlasso_2012.IndexMinMSE);
+ee = table; ee.var = headers_D';
+ee.y2013 = BRlasso_2013(:,FRlasso_2013.IndexMinMSE);
+
+mergedBRlasso1 = outerjoin(aa, bb, 'RightKey', 'var', 'LeftKey', 'var',...
+    'MergeKeys', true);
+mergedBRlasso2 = outerjoin(mergedBRlasso1, cc, 'RightKey', 'var', 'LeftKey', 'var',...
+    'MergeKeys', true);
+mergedBRlasso3 = outerjoin(mergedBRlasso2, dd, 'RightKey', 'var', 'LeftKey', 'var',...
+    'MergeKeys', true);
+mergedBRlassoF = outerjoin(mergedBRlasso3, ee, 'RightKey', 'var', 'LeftKey', 'var',...
+    'MergeKeys', true);
+
+%% See significant variables across years in a matrix plot
+
+padded = table2array(mergedBRlassoF(:,2:size(mergedBRlassoF,2)));
+padded = padarray(padded,[1 1],'post');
+pcolor(padded); shading flat; axis ij; colorbar
+%'Xtick',[0.5:7.5]
+xlabel('Year'); ylabel('Variable');
+title('LASSO Beta Coefficients for Reconstructed Data');
+set(gca,'Xtick',[1.5:1:8.5],...
+    'Xticklabel',{'2007', '2008', '2009', '2010',...
+    '2011', '2012', '2013'},...
+    'Ytick',[0.5:16.5],...
+    'Yticklabel', {'Diabetes.mortality.rate',...
+    'Healthposts.density',...
+    'Heathcentres.density',...
+    'Hospital.density',...
+    'Life.expectancy',...
+    'No.RRorMDR.TBres',...
+    '%TBwithHIV',...
+    '%TBwithHIV-ART',...
+    '%TBwithHIV-CPT',...
+    '%TBwithHIV-tested',...
+    '%childbelow5.underweight',...
+    '%new.RRorMDR.TBres',...
+    '%success.treat.newTBcases',...
+    '%success.treat.oldTBcases',...
+    'Pop',...
+    'Pop.over.60',...
+    'Pop.under.15'});
+print('img/LASSObeta_recondata','-dpdf');
+%% Matrix visualizations for each year
 
 figure;
 imagesc(coeff7); colorbar;
@@ -552,3 +639,36 @@ set(gca,'Xtick',1:32, 'Ytick',1:17,...
     'PC1', 'PC3', 'PC5', 'PC9'},...
     'XTickLabelRotation', 70);
 print('img/PCLoadingmatrix_LASSO', '-dpdf');
+
+% pcolor(tt); axis ij
+
+%% Finally, try out stepwise-reg on reconstructed data
+
+SM2007 = stepwiselm(recon_2007, response_2007, 'linear', 'Criterion', 'bic')
+nSM2007 = fitlm(recon_2007, response_2007, 'y ~ x2 + x6 + x11')
+anova(nSM2007)
+
+SM2008 = stepwiselm(recon_2008, response_2008, 'linear', 'Criterion', 'bic')
+nSM2008 = fitlm(recon_2008, response_2008, 'y ~ x2 + x11')
+anova(nSM2008)
+
+SM2009 = stepwiselm(recon_2009, response_2009, 'linear', 'Criterion', 'bic')
+nSM2009 = fitlm(recon_2009, response_2009, 'y ~ x2 + x6 + x12')
+anova(nSM2009)
+
+SM2010 = stepwiselm(recon_2010, response_2010, 'linear', 'Criterion', 'bic')
+nSM2010 = fitlm(recon_2010, response_2010, 'y ~ x2 + x3 + x7 + x8 + x14')
+anova(nSM2010)
+
+SM2011 = stepwiselm(recon_2011, response_2011, 'linear', 'Criterion', 'bic')
+nSM2011 = fitlm(recon_2011, response_2011, 'y ~ x2 + x8 + x12')
+anova(nSM2011)
+
+SM2012 = stepwiselm(recon_2012, response_2012, 'linear', 'Criterion', 'bic')
+nSM2012 = fitlm(recon_2012, response_2012, 'y ~ x6 + x10 + x12')
+anova(nSM2012)
+
+SM2013 = stepwiselm(recon_2013, response_2013, 'linear', 'Criterion', 'bic')
+nSM2013 = fitlm(recon_2013, response_2013, 'y ~ x2 + x11 + x12 + x15')
+anova(nSM2013)
+

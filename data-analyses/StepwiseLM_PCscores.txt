@@ -1,0 +1,251 @@
+2007 - step
+
+1. Adding x1:x8, BIC = -216.1461
+2. Adding x1:x2, BIC = -216.725
+3. Removing x4, BIC = -221.6
+4. Removing x7, BIC = -226.09
+5. Removing x5, BIC = -226.24
+6. Removing x1:x8, BIC = -226.95
+7. Removing x8, BIC = -230.5
+
+ans = 
+
+
+Linear regression model:
+    y ~ 1 + x3 + x6 + x1*x2
+
+Estimated Coefficients:
+                    Estimate        SE         tStat       pValue  
+                   __________    _________    _______    __________
+
+    (Intercept)      0.094668    0.0089295     10.602    1.2752e-20
+    x1               0.011643    0.0027352     4.2567    3.3691e-05
+    x2              -0.019248    0.0053121    -3.6235     0.0003802
+    x3              -0.019538    0.0058133    -3.3609    0.00095273
+    x6               0.030125    0.0087685     3.4356    0.00073757
+    x1:x2          -0.0043626    0.0018711    -2.3316      0.020853
+
+
+Number of observations: 182, Error degrees of freedom: 176
+Root Mean Squared Error: 0.12
+R-squared: 0.221,  Adjusted R-Squared 0.199
+F-statistic vs. constant model: 10, p-value = 1.91e-08
+1. Removing x3, BIC = -245.62
+2. Removing x5, BIC = -248.84
+3. Removing x4, BIC = -250.73
+4. Removing x2, BIC = -251.94
+
+2007 - refit
+
+Linear regression model:
+    y ~ 1 + x1 + x2 + x3 + x6
+
+Estimated Coefficients:
+                   Estimate        SE         tStat       pValue  
+                   _________    _________    _______    __________
+
+    (Intercept)     0.094687    0.0090408     10.473    2.7972e-20
+    x1             0.0095468    0.0026154     3.6502    0.00034471
+    x2              -0.01706    0.0052937    -3.2227     0.0015117
+    x3             -0.018496    0.0058683    -3.1519     0.0019056
+    x6              0.029682    0.0088756     3.3443     0.0010071
+
+
+Number of observations: 182, Error degrees of freedom: 177
+Root Mean Squared Error: 0.121
+R-squared: 0.197,  Adjusted R-Squared 0.179
+F-statistic vs. constant model: 10.9, p-value = 6.56e-08
+
+
+2008 - step
+
+Linear regression model:
+    y ~ 1 + x1 + x6
+
+Estimated Coefficients:
+                   Estimate        SE        tStat       pValue  
+                   _________    _________    ______    __________
+
+    (Intercept)     0.092441    0.0087849    10.523    1.2948e-20
+    x1             0.0025345    0.0010722    2.3638      0.019118
+    x6              0.038002    0.0069431    5.4733    1.4148e-07
+
+
+Number of observations: 189, Error degrees of freedom: 186
+Root Mean Squared Error: 0.12
+R-squared: 0.16,  Adjusted R-Squared 0.151
+F-statistic vs. constant model: 17.7, p-value = 9.37e-08
+1. Adding x1:x4, BIC = -231.3488
+
+2009 - step
+
+Linear regression model:
+    y ~ 1 + x2 + x3 + x1*x4
+
+Estimated Coefficients:
+                    Estimate         SE         tStat       pValue  
+                   __________    __________    _______    __________
+
+    (Intercept)      0.094924     0.0092001     10.318    5.5315e-20
+    x1             -0.0032232    0.00087657     -3.677    0.00030958
+    x2               -0.01294       0.00451    -2.8691     0.0045983
+    x3               0.014125     0.0058407     2.4184      0.016563
+    x4               0.020932     0.0069421     3.0153     0.0029304
+    x1:x4           -0.001282    0.00054617    -2.3473      0.019972
+
+
+Number of observations: 190, Error degrees of freedom: 184
+Root Mean Squared Error: 0.123
+R-squared: 0.184,  Adjusted R-Squared 0.162
+F-statistic vs. constant model: 8.32, p-value = 4.17e-07
+
+2009 - refit
+
+Linear regression model:
+    y ~ 1 + x1 + x2 + x3 + x4
+
+Estimated Coefficients:
+                    Estimate        SE         tStat       pValue  
+                   __________    _________    _______    __________
+
+    (Intercept)       0.09412    0.0093051     10.115    2.0119e-19
+    x1             -0.0034475    0.0008819    -3.9092    0.00012986
+    x2              -0.013397    0.0045604    -2.9377     0.0037275
+    x3               0.015231    0.0058922      2.585      0.010509
+    x4               0.015861    0.0066773     2.3754      0.018555
+
+
+Number of observations: 190, Error degrees of freedom: 185
+Root Mean Squared Error: 0.125
+R-squared: 0.16,  Adjusted R-Squared 0.142
+F-statistic vs. constant model: 8.8, p-value = 1.58e-06
+
+
+2010 - step 
+
+1. Adding x2:x6, BIC = -202.0376
+2. Adding x3:x5, BIC = -202.9151
+3. Removing x1, BIC = -208.14
+4. Removing x4, BIC = -213.36
+
+ans = 
+
+
+Linear regression model:
+    y ~ 1 + x2*x6 + x3*x5
+
+Estimated Coefficients:
+                    Estimate        SE         tStat       pValue  
+                   __________    _________    _______    __________
+
+    (Intercept)      0.091418    0.0093097     9.8196    1.5681e-18
+    x2             -0.0045651    0.0037793    -1.2079       0.22864
+    x3             -0.0077151    0.0045326    -1.7022      0.090434
+    x5              -0.014191    0.0061694    -2.3002      0.022571
+    x6             -0.0080314    0.0070605    -1.1375       0.25682
+    x2:x6           0.0057967    0.0019315     3.0011     0.0030675
+    x3:x5           0.0080067    0.0031205     2.5658      0.011098
+
+
+Number of observations: 189, Error degrees of freedom: 182
+Root Mean Squared Error: 0.127
+R-squared: 0.0979,  Adjusted R-Squared 0.0682
+F-statistic vs. constant model: 3.29, p-value = 0.00424
+
+2011 - step 
+
+1. Removing x1, BIC = -277.23
+2. Removing x6, BIC = -278.96
+3. Removing x4, BIC = -279.16
+
+ans = 
+
+
+Linear regression model:
+    y ~ 1 + x2 + x3 + x5
+
+Estimated Coefficients:
+                   Estimate        SE         tStat       pValue  
+                   _________    _________    _______    __________
+
+    (Intercept)     0.088808    0.0081251      10.93    7.6562e-22
+    x2              0.011298    0.0031588     3.5768    0.00044236
+    x3             -0.012717    0.0047381    -2.6839     0.0079255
+    x5              0.031163    0.0064956     4.7975    3.2625e-06
+
+
+Number of observations: 192, Error degrees of freedom: 188
+Root Mean Squared Error: 0.112
+R-squared: 0.185,  Adjusted R-Squared 0.172
+F-statistic vs. constant model: 14.2, p-value = 2.13e-08
+
+2012 - step
+
+1. Adding x3:x4, BIC = -313.756
+2. Adding x2:x3, BIC = -313.9037
+3. Removing x1, BIC = -319.01
+
+ans = 
+
+
+Linear regression model:
+    y ~ 1 + x2*x3 + x3*x4
+
+Estimated Coefficients:
+                    Estimate        SE         tStat       pValue  
+                   __________    _________    _______    __________
+
+    (Intercept)      0.084945     0.007099     11.966    8.8754e-25
+    x2              -0.013403    0.0032964     -4.066     7.082e-05
+    x3               0.031293    0.0052738     5.9338    1.4413e-08
+    x4               -0.01565    0.0043032    -3.6369    0.00035817
+    x2:x3          -0.0035721    0.0015695    -2.2759      0.024003
+    x3:x4          -0.0092788    0.0030769    -3.0157     0.0029265
+
+
+Number of observations: 190, Error degrees of freedom: 184
+Root Mean Squared Error: 0.0978
+R-squared: 0.305,  Adjusted R-Squared 0.286
+F-statistic vs. constant model: 16.1, p-value = 3.52e-13
+
+2013 - step 
+
+1. Adding x3:x4, BIC = -328.1153
+2. Adding x1:x7, BIC = -328.1788
+3. Adding x4:x5, BIC = -328.6395
+4. Adding x3:x9, BIC = -328.7772
+5. Adding x6:x9, BIC = -329.8876
+6. Removing x2, BIC = -335.12
+7. Removing x8, BIC = -338.1
+8. Adding x1:x6, BIC = -338.5617
+9. Removing x1:x7, BIC = -340.15
+10. Removing x7, BIC = -345.1
+11. Removing x3:x4, BIC = -346.71
+
+ans = 
+
+
+Linear regression model:
+    y ~ 1 + x1*x6 + x3*x9 + x4*x5 + x6*x9
+
+Estimated Coefficients:
+                    Estimate        SE         tStat       pValue  
+                   __________    _________    _______    __________
+
+    (Intercept)       0.08829    0.0062938     14.028    1.5222e-30
+    x1              0.0042532    0.0012266     3.4674    0.00065959
+    x3               0.028217    0.0035694     7.9051    2.7615e-13
+    x4              0.0019289    0.0046289     0.4167        0.6774
+    x5              -0.012041    0.0053037    -2.2704       0.02439
+    x6              0.0042023    0.0050608    0.83035       0.40746
+    x9               0.012138    0.0061581     1.9711      0.050275
+    x1:x6          -0.0029294    0.0010725    -2.7313     0.0069471
+    x3:x9            0.012374    0.0036237     3.4147    0.00079165
+    x4:x5          -0.0060342     0.002228    -2.7083     0.0074262
+    x6:x9           -0.013976       0.0039    -3.5836    0.00043801
+
+
+Number of observations: 188, Error degrees of freedom: 177
+Root Mean Squared Error: 0.0851
+R-squared: 0.444,  Adjusted R-Squared 0.413
+F-statistic vs. constant model: 14.2, p-value = 3.07e-18
