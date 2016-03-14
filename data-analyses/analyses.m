@@ -66,7 +66,7 @@ cv(3, :) = [l, q, t];
 %% Plot cross validated accuracies
 figure;
 bar([2007,2010,2012], cv);
-legend('LDA', 'QDA', 'fitctree', 'Location', 'north', 'Orientation', 'horizontal');
+legend('LDA', 'QDA', 'fitctree', 'Location', 'southoutside', 'Orientation', 'horizontal');
 title('Different classification methods on classifying high prevalence');
 xlabel('Year');
 ylabel('% cross-validated accuracy');
