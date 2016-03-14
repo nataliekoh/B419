@@ -44,7 +44,7 @@ end;
 %% lda
 % lda classifier cross validation runs
 test_fraction = 0.3;
-n_trials = 100;
+n_trials = 500;
 all_cv_lda = zeros(n_trials, 1);
 
 for i = 1:n_trials
@@ -63,7 +63,6 @@ l = mean(all_cv_lda);
 %% Classification tree classifier
 
 test_fraction = 0.3;
-n_trials = 100;
 all_cv_tree = zeros(n_trials, 1);
 
 for i = 1:n_trials
@@ -82,7 +81,6 @@ t = mean(all_cv_tree);
 
 % qda classifier cross validation runs
 test_fraction = 0.3;
-n_trials = 100;
 cv_qda = 0;
 count = 0;
 

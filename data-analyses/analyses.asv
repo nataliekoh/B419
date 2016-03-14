@@ -63,15 +63,15 @@ cv(2, :) = [l, q, t];
 [p, l, q, t] = classifications(2012, [1:8, 12, 18, 20:23]);
 cv(3, :) = [l, q, t];
 
-%%
+%% Plot cross validated accuracies
 figure;
 bar([2007,2010,2012], cv);
-legend('LDA', 'QDA', 'fitctree', 'Location');
+legend('LDA', 'QDA', 'fitctree', 'Location', 'north', 'Orientation', 'horizontal');
 title('Different classification methods on classifying high prevalence');
-xlabel('Classification methods');
+xlabel('Year');
 ylabel('% cross-validated accuracy');
 
-%% Further cleaning of 2010 data in order to be used with PCA
+%% OLD METHODS - Further cleaning of 2010 data in order to be used with PCA
 % clean_indices = find(~isnan(TBprev_2010) == 1);
 % clean_2010 = TBprev_2010(clean_indices);
 % clean_2010_countries = unique_countries{clean_indices, 1};
